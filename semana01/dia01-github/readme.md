@@ -12,3 +12,4 @@
 * git branch -M main
 * git push -u origin main
 * git status 2  
+* git pull actualizar de remoto a local
