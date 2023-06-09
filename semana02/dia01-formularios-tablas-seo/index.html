@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Formularios + Inputs + Validaciones</h1>
+        <form action="">
+            <h2>Inputs</h2>
+            <label for="text1">Input tipo texto</label>
+            <input type="text" placeholder="Ingrese algun texto: " name="Texto" id="text1"><br>
+            <label for="text2">Input (Desactivados)</label>
+            <input type="text" name="" id="text2" disabled><br>
+            <label for="text3">Input (Solo lectura)</label>
+            <input type="text" name="" id="text3" placeholder="Input solo lectura" readonly value="Solo lectura"> <br>
+            <label for="text4">Input tipo number</label>
+            <input type="number" name="" id="text4" placeholder="Edad Ej. 18">
+            <label for="">Input email</label>
+            <input type="email" name="" id="" placeholder="Correo Ej. quispe@gmail.com">
+            <label for="">Input tipo range (Edad)</label>
+            <input type="range" name="" id="">
+            <label for="">Input tipo tel</label>
+            <input type="tel" name="" id="" placeholder="(+51) 999999999">
+            <label for=""> Input url</label>
+            <input type="url" name="" id="" placeholder="Sitio web">
+            <label for="">Input tipe color</label>
+            <input type="color" name="" id="">
+            <label for="">Input search</label>
+            <input type="search" name="" id="">
+            <label for="">Input tipe file</label>
+            <input type="file" src="" alt="" accept="image/*">
+            <label for="">Input solo jpg y jpeg</label>
+            <input type="file" name="" id="" accept=".jpg, .jpeg">
+            <input type="hidden" name="" value="datos ocultos">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset"> 
+        </form>
+        <form action="">
+            <h2>Input Fecha</h2>
+            <label for="">Input tipo datetime-local (fecha y hora)</label>
+            <input type="datetime-local" name="fecha" id="">
+            <label for="">Input dia</label>
+            <input type="date" name="dia" id="">
+            <label for="">Input week</label>
+            <input type="week" name="semana" id="">
+            <label for="">Input mes</label>
+            <input type="month" name="mes" id="">
+            <input type="submit" value="Guardar">
+        </form>
+        <form action="">
+            <h2>Text Areas</h2>
+            <label for="">
+                <textarea name="" id="" placeholder="Escribe una descripcion sobre ti" rows="6"></textarea>
+            </label>
+            <label for="">
+                <textarea name="" id="" placeholder="Escribe una descripcion sobre ti" rows="6" disabled></textarea>
+            </label>
+            <input type="submit">
+        </form>
+        <form action="">
+            <label for="">
+                Comida favorita
+                <select name="comidas" id="">
+                    <option value="Selecciona tu comida favorita" disabled></option>
+                    <option value="Pe">peruana</option>
+                    <option value="It">italiana</option>
+                    <option value="Fr">francesa</option>
+                </select>
+            </label>
+            <input type="submit" value="guardar">
+        </form>
+        <form action="">
+            <label for="">
+                Checkbox
+                <input type="checkbox" name="english" id="" checked> ingles
+            </label>
+            <label for="">
+                <input type="checkbox" name="spanish" id=""> español
+            </label>
+        </form>
+    </main>
+</body>
+</html>
