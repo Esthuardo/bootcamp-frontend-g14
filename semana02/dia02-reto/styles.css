@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    font-family:'Montserrat', sans-serif ;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-width: 100vh;
+}
+main{
+    width: 560px;
+    height: 400px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+}
+.photo{
+    width: 300px;
+    background-color: white;
+    background-image: url('../dia02-reto/images/image-product-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 7px 0 0 7px;
+}
+.content{
+    color: hsl(228, 12%, 48%);
+    width: 260px;
+    background-color: white;
+    border-radius: 0 7px 7px 0;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    box-shadow: 1p 1p 3px #ccc;
+}
+.content h3{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.content h1{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.content p{
+    font-weight: 500;
+}
+.content span{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-size: 40px;
+}
+.content div{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+.content button{
+    font-family: 'Montserrat', sans-serif ;
+    background-color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    border: 0;
+    color: white;
+    width: 100%;
+    padding: 14px;
+    border-radius: 7px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap:7px;
+}
