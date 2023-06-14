@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Registrar 2</title>
+    <style>
+        main{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            min-width: 100vh;
+        }
+        form{
+            width: 450px;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+        }
+        #dat{
+            width: 210px;
+        }
+        hgroup{
+            margin-bottom: 8px;
+        }
+        img{
+            width: 28%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="">
+            <div>
+                <hgroup>
+                    <h1>Crea una cuenta</h1>
+                    <h5>Ingresa la siguiente información para registrarte</h5>
+                </hgroup>
+                <img src="https://seeklogo.com/images/C/cisco-webex-meeting-logo-D0DCD6AED7-seeklogo.com.png" alt="">
+            </div>
+            <div>
+                <label>Names<input type="text" name="Nom" id="dat" placeholder="Names" minlength="3" required></label> <br>
+                <label>Apellidos <input type="text" name="Ape" id="dat" placeholder="Apellidos" minlength="3" required></label>
+            </div>
+            <label>Edad <input type="number" name="Edad" id="" placeholder="Ej. 19" min="18"></label>
+            <label>Fecha de nacimiento <input type="date" name="" id=""></label>
+            <label>Genero 
+                <select name="Genero" id="">
+                    <option value="" disabled selected>Seleccione su género</option>
+                    <option value="Men">Masculino</option>
+                    <option value="Female">Femenino</option>
+                </select>
+            </label>
+            <label>Correo electrónico<input type="email" name="Email" id="" placeholder="Email: Ej. user@gmail.com" required></label>
+            <label >Dirección <input type="text" name="Dir1" id="" placeholder="Dirección"  required minlength="2"> <br> <input type="text" name="Dir2" id="" placeholder="Dirección linea 2" required minlength="2"></label>
+            <label>Teléfono <input type="tel" name="Tel" id="" placeholder="Teléfono" required pattern="\+[0-9]{2} [0-9]{9}"> </label>
+            <label>Código postal <input type="number" name="CodPost" id="" placeholder="Ej: 14001" required pattern="[0-9]{5}"></label>
+            <label>Subir firma <input type="file" name="Firma" id="" accept="image/*"> </label>
+            <label><input type="checkbox" name="TermCondi" id="">  Acepto los términos, condiciones y políticas.</label>
+            <input type="submit" value="Registrarse">
+            <p>¿Ya tienes una cuenta? <a href="login.html"> Accede desde aquí</a></p>
+        </form>
+    </main>
+</body>
+</html>

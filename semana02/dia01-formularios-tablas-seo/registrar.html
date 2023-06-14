@@ -13,38 +13,46 @@
             align-items: center;
             min-width: 100vh;
         }
+        form{
+            width: 450px;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+        }
+        #dat{
+            width: 210px;
+        }
+        hgroup{
+            margin-bottom: 8px;
+        }
+        img{
+            width: 28%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
-    <main class="container">
+    <main>
         <form action="">
-            <hgroup>
-                <h1>¡Registrese!</h1>
-                <h2>Ingresa los siguientes datos para registrarse</h2>
-            </hgroup>
-            <label for="">Nombres y apellidos
-                <input type="text" name="NomApe" id="" placeholder="Mi nombre Mi apellido" minlength="3" required>
-            </label>
-            <label for="">Número de telefono
-                <input type="tel" name="Tel" id="" placeholder="+51 999999999" pattern="\+[0-9]{2} [0-9]{9}">
-            </label>
-            <label for="">Correo electrónico
-                <input type="email" name="Email" id="" placeholder="Ej. user@gmail.com" required>
-            </label>
-            <label for="">Contraseña
-                <input type="password" name="Passw" id="" required minlength="8">
-            </label>
-            <label for="">Confirmar contraseña
-                <input type="password" name="PasswConf" id="" required minlength="8">
-            </label>
-            <label for="">
-                <input type="checkbox" name="Remember" id=""> Recuerdame
-            </label><br>
-            <label for="">
-                <input type="checkbox" name="TerminosCondicionesr" id=""> Aceptar terminos y condiciones <a href="TerminosCondiciones.html"> Ver aqui</a>
-            </label><br>
-            <input type="submit" value="Registrar">
-            <p>¿Ya tienes una cuenta? <a href="registrar.html"> Ingresa aquí</a></p>
+            <div>
+                <hgroup>
+                    <h1>Crea una cuenta</h1>
+                    <h5>Ingresa la siguiente información para registrarte</h5>
+                </hgroup>
+                <img src="https://seeklogo.com/images/C/cisco-webex-meeting-logo-D0DCD6AED7-seeklogo.com.png" alt="">
+            </div>
+            <div>
+                <input type="text" name="Nom" id="dat" placeholder="Nombres" minlength="3" required> <br>
+                <input type="text" name="Ape" id="dat" placeholder="Apellidos" minlength="3" required>
+            </div>
+            <input type="email" name="Email" id="" placeholder="Email: Ej. user@gmail.com" required>
+            <input type="tel" name="Tel" id="" placeholder="Teléfono" required pattern="\+[0-9]{2} [0-9]{9}">
+            <input type="password" name="Pasw" id="" placeholder="Contraseña" required minlength="8" pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]">
+            <input type="password" name="ConfPasw" id="" placeholder="Confirmar contraseña" required minlength="8" pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]">
+            <input type="submit" value="Registrarse">
+            <p>¿Ya tienes una cuenta? <a href="login.html"> Accede desde aquí</a></p>
+            <p>¿No tienes una cuenta? <a href="registrar.html"> Registrate aquí</a></p>
         </form>
     </main>
 </body>
