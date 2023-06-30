@@ -1,0 +1,18 @@
+@mixin default-border{
+    border: 5px solid red;
+}
+@mixin custom-border($width,$color){
+    border: $width solid $color;
+}
+@import 'variables';
+@import 'card';
+
+
+
+body{
+    background-color: $primary--color;
+    text-align: center;
+}
+h1{
+    color: #1B6B93;
+}

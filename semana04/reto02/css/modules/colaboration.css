@@ -37,3 +37,24 @@
     border: none;
     border-radius: 5px;
 }
+@media (max-width:768px) {
+    .colaboration{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .colaboration__text{
+        text-align: center;
+        line-height: 1.5;
+    }
+    .colaboration__input{
+        align-items: center;
+    }
+    .colaboration__input_email{
+        border: none;
+        width: 18rem;
+    }
+    .colaboration__input_submit{
+        width: 14rem;
+    }
+}

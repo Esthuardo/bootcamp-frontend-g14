@@ -14,6 +14,6 @@
     --accent-bright-blue: hsl(224, 93%, 58%);
     --accent-moderated-cyan: hsl(170, 45%, 43%);
   
-    --neutral-light-grayish-blue: rgb(246, 246, 254);
+    --neutral-light-grayish-blue: hsl(240, 80%, 98%);
     --neutral-light-gray:hsl(0, 0%, 75%);
   }

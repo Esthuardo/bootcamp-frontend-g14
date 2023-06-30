@@ -2,7 +2,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    
+    width: 100%;
 }
 .header__logo{
     padding: 2rem 3rem;
@@ -14,3 +14,15 @@
     gap: 2rem;
     padding: 2rem 3rem;
 }
+@media (max-width:768px){
+    .header{
+        justify-content: none;
+    }
+    .header__logo{
+        padding: 1rem 0 0 0;
+    }
+    .header__nav{
+        padding: 1rem 0.7rem 0 1rem;
+        gap:0.5rem
+    }
+  }
