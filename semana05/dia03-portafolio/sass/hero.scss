@@ -1,0 +1,55 @@
+.hero{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: url('../images/SVG/hero_background.svg')  bottom no-repeat ;
+    background-size: contain;
+    &__texto{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        h1{
+            font-size: 32px;
+        }
+        h3{
+            font-weight: $font-weight-regular;
+        }
+    }
+    &__picture{
+        width: 17rem;
+        height: 17rem;
+        border-radius: 1000px;
+        border: 2px solid $primary-background-bold-green2;
+    }
+    &__specialties{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(4, 7rem);
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+        font-weight: $font-weight-bold;
+        padding-bottom: 2rem;
+        &__logo{
+            border-radius: 10px;
+            padding: 1rem;
+            height: 8rem;
+            background-color: $secundary-color-light-green;
+        }
+    }
+}
+@media (max-width:768px) {
+    .hero{
+        &__specialties{
+            display: grid;
+            grid-template-columns: repeat(2,7rem);
+            &__logo{
+              height: 6.8rem;  
+              width: 6.8rem;
+            }
+        }
+    }
+}

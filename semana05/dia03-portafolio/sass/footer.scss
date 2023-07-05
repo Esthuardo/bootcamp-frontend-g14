@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    height:20rem;
+    gap: 1rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    background: url('../images/SVG/hero_background.svg') bottom no-repeat;
+    background-size: 100% ;
+    background-color: $primary-background-portafolio3;
+    align-items: center;
+    justify-content: flex-end;
+}
+@media (max-width:768px) {
+    .footer{
+        height: 8rem;
+        padding-bottom: 1rem;
+    }
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import './variables.scss';
+@import 'header.scss';
+@import 'hero.scss';
+@import 'skills.scss';
+@import 'portafolio.scss';
+@import 'footer.scss';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-size: $font-size;
+}
+body{
+    background-color: $primary-background-green;
+    color: $text-color-white;
+    font-family: $font-primary;
+    font-size: $font-size;
+}
+.span{
+    color: $text-color-white;
+    font-weight: $font-weight-bold;
+    &.gold{
+        color: $text-color-gold;
+    }
+}
