@@ -58,12 +58,39 @@
   display: none;
 }
 
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .header__contain {
+  background-color: #006414;
+  display: block;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#menu-toggle:checked ~ .header__contain .header__nav {
+  flex-direction: column;
+}
+
 @media (max-width: 768px) {
+  .header {
+    padding: 1rem 0;
+  }
   .header__contain {
     display: none;
   }
   .header__icons {
-    display: none;
+    gap: 0.5rem;
+  }
+  .header__icons_theme {
+    padding: 0;
+  }
+  .header__icons img {
+    width: 2rem;
   }
   .header__menu {
     display: flex;

@@ -55,13 +55,35 @@
         display: none;
     }
 }
+#menu-toggle{
+    display: none;
+}
+#menu-toggle:checked ~ .header__contain {
+    background-color: $primary-background-bold-green;
+    display: block;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+#menu-toggle:checked ~ .header__contain  .header__nav{
+    flex-direction: column;
+}
 @media (max-width:768px) {
     .header{
+        padding: 1rem 0;
         &__contain{
             display: none;
         }
         &__icons{
-            display: none;
+            gap: 0.5rem;
+            &_theme{
+                padding: 0;
+            }
+            img{
+                width: 2rem;
+            }
         }
         &__menu{
             display: flex;
