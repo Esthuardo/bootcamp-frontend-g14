@@ -1,0 +1,48 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        color: $primary-color-gold;
+        font-size: 2rem; //2rem serian 16 pixeles ya que en html el font size es 16px osea 1 rem
+        font-weight: $font-weight-bold;
+    }
+    &__menu ul{
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        padding: 10px;
+        margin: 10px;
+    }
+    &__menu a{
+        font-size: 1.125rem;
+        font-weight: $font-weight-semibold;
+        display: flex;
+        gap: 1.5rem;
+
+        transition: color ease .3s;
+    }
+    &__menu a:hover, &__menu--active{
+        color: $primary-color-gold;
+    }
+    &__actions{
+        display: flex;
+        gap: 1.5rem;
+    }
+    &__action{
+        width: 2.75rem;
+        height: 2.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            border-radius: 100%;
+            background-color: $primary-color-blue1;
+        }
+    }
+    &__action--dark-selected{
+        border: none;
+        border-radius: 100%;
+        background-color: $primary-color-blue3;
+    }
+}

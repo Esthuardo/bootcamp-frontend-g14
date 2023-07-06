@@ -8,11 +8,17 @@
         color: $text-color-gold;
         font-weight: $font-weight-bold;
         font-size: 28px;
+        cursor:default;
     }
     &__nav{
         display: flex;
         list-style: none;
         gap: 2rem;
+        & a:hover{
+            transition: color ease 0.3s;
+            color: $text-color-gold;
+            font-weight: $font-weight-bold;
+        }
     }
     &__icons{
         display: flex;
