@@ -21,7 +21,7 @@ main{
 .photo{
     width: 300px;
     background-color: white;
-    background-image: url('../dia02-reto/images/image-product-desktop.jpg');
+    background-image: url('./images/image-product-desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 7px 0 0 7px;
