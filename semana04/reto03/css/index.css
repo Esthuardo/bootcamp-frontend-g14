@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
-@import url(/semana04/reto02/css/modules/variables.css);
-@import url(/semana04/reto02/css/modules/header.css);
-@import url(/semana04/reto02/css/modules/hero.css);
-@import url(/semana04/reto02/css/modules/features.css);
-@import url(/semana04/reto02/css/modules/colaboration.css);
-@import url(/semana04/reto02/css/modules/footer.css);
+@import url(/semana04/reto03/css/modules/variables.css);
+@import url(/semana04/reto03/css/modules/header.css);
+@import url(/semana04/reto03/css/modules/hero.css);
+@import url(/semana04/reto03/css/modules/features.css);
+@import url(/semana04/reto03/css/modules/colaboration.css);
+@import url(/semana04/reto03/css/modules/footer.css);
 
 * {
     box-sizing: border-box;
