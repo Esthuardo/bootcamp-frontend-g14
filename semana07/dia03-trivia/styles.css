@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.Visualizar{
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    height: 376px;
+    overflow: hidden;
+}
+.Visualizar section{
+    transition: 1.5s;
+}

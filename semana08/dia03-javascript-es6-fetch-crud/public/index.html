@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD  de peliculas Json-server</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <h1>CRUD peliculas json-server</h1>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="grid">
+            <div>
+               <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody class="movies__list">
+                    
+                </tbody>
+               </table>
+            </div>
+            <div>
+                <form id="moviesForm">
+                    <h2>New movies</h2>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="text" name="image" placeholder="URL image" required>
+                    <input type="date" name="release" placeholder="Release" required>
+                    <select name="genre">
+                        <option value="">Select a genre ...</option>
+                        <option value="1">Comedy</option>
+                        <option value="2">Action</option>
+                        <option value="3">Animation</option>
+                        <option value="4">Adventure</option>
+                    </select>
+                    <textarea name="resumen" placeholder="Resume"></textarea>
+                    <input type="submit" value="Save">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
