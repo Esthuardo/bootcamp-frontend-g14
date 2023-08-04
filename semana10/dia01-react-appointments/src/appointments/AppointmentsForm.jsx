@@ -15,8 +15,8 @@ const AppointmentsForm = ({ onSaveAppointment, appointment }) => {
   
   useEffect(()=>{
     if (Object.keys(appointment).length>0) {
-        setForm({...appointment,edit:true})
         console.log(appointment.id)
+        setForm({...appointment,edit:true})
     }
   },[appointment])
 
