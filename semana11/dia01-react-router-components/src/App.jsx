@@ -2,22 +2,22 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 import Home from './pages/Home'
 import Login from './pages/Login'
-import ChristopherAcosta from './pages/ChristopherAcosta'
+import Register from './pages/Register'
+import ChristopherAcosta from './pages/Otros/ChristopherAcosta'
+import LayoutBase from './layouts/LayoutBase'
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <nav>
-          <Link to='/'>Home </Link>
-          <Link to='/login'>Login </Link>
-          <Link to='/pruebas'>Prueba </Link>
-        </nav>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/prueba' element={<ChristopherAcosta />} />
-        </Routes>
+        <LayoutBase>
+          <Routes>
+            <Route path='/' element={<Home/>} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
+          </Routes>
+        </LayoutBase>
+        
       </BrowserRouter>
     </>
   )
