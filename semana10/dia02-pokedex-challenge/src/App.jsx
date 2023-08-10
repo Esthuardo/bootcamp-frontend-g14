@@ -2,6 +2,7 @@ import { useState } from "react"
 import { useEffect } from "react"
 import PokemonsList from "./components/pokemons/PokemonsList"
 import Header from "./components/Header"
+import Header_Pokemons from "./components/Header_Pokemons"
 
 function App() {
   const [pokemons,setPokemons] = useState({})
@@ -16,9 +17,9 @@ function App() {
   },[])
   return (
     <>
-      <Header title={'Poke catalog'} />
+      <Header_Pokemons title={'Poké Catalog'} />
       {/* {JSON.stringify(pokemons)} */}
-      <main className="p-3 flex">
+      <main className="p-3 flex flex-col gap-3 w-[768px] items-center m-auto">
         <PokemonsList pokemons={pokemons}/>
       </main>
     </>
